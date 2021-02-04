@@ -1,0 +1,4 @@
+Pickup here:
+
+https://github.com/ChilliCream/graphql-workshop/blob/master/docs/3-understanding-dataLoader.md#adding-dataloader
+
