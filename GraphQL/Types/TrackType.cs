@@ -25,6 +25,7 @@ namespace ConferencePlanner.GraphQL.Types
           .Field(t => t.Sessions)
           .ResolveWith<TrackResolvers>(t => t.GetSessionsAsync(default!, default!, default!, default))
           .UsePaging<NonNullType<SessionType>>()
+          .UseDbContext<ApplicationDbContext>()
           .Name("sessions");
 
       descriptor
