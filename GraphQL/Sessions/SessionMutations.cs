@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using ConferencePlanner.GraphQL.Common;
 using ConferencePlanner.GraphQL.Data;
 using HotChocolate;
+using HotChocolate.Subscriptions;
 using HotChocolate.Types;
 
 namespace ConferencePlanner.GraphQL.Sessions
@@ -50,8 +51,9 @@ namespace ConferencePlanner.GraphQL.Sessions
 
     [UseApplicationDbContext]
     public async Task<ScheduleSessionPayload> ScheduleSessionAsync(
-    ScheduleSessionInput input,
-    [ScopedService] ApplicationDbContext context)
+        ScheduleSessionInput input,
+        [ScopedService] ApplicationDbContext context,
+        [Service] ITopicEventSender eventSender)
     {
       if (input.EndTime < input.StartTime)
       {
@@ -73,6 +75,10 @@ namespace ConferencePlanner.GraphQL.Sessions
       session.EndTime = input.EndTime;
 
       await context.SaveChangesAsync();
+
+      await eventSender.SendAsync(
+          nameof(SessionSubscriptions.OnSessionScheduledAsync),
+          session.Id);
 
       return new ScheduleSessionPayload(session);
     }
