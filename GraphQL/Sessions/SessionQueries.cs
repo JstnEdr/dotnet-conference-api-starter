@@ -6,6 +6,7 @@ using ConferencePlanner.GraphQL.Data;
 using ConferencePlanner.GraphQL.DataLoader;
 using ConferencePlanner.GraphQL.Types;
 using HotChocolate;
+using HotChocolate.Data;
 using HotChocolate.Types;
 using HotChocolate.Types.Relay;
 using Microsoft.EntityFrameworkCore;
@@ -17,6 +18,8 @@ namespace ConferencePlanner.GraphQL.Sessions
   {
     [UseApplicationDbContext]
     [UsePaging(typeof(NonNullType<SessionType>))]
+    [UseFiltering(typeof(SessionFilterInputType))]
+    [UseSorting]
     public IQueryable<Session> GetSessions(
         [ScopedService] ApplicationDbContext context) =>
         context.Sessions;

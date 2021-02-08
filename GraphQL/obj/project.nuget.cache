@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "38GwLI2347I3xiN9aXDTpqC9ifnjsiQbG+8ztHrK2Ytt5BpS0HPQ2yyi5nlcbYZZn7BMSOKwtKDJx7/ESRxfcw==",
+  "dgSpecHash": "83HMFebk0APADJbZrFeXXUgCjLUMCEycDailED4El8I/es/Iwp3Kp6dQM54zjUs5fzMCihec1B+mrJfcI5OoTg==",
   "success": true,
   "projectFilePath": "/root/PROJECTS/PLAYGROUND/graphql-workshop/GraphQL/GraphQL.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "/root/.nuget/packages/hotchocolate/11.0.0/hotchocolate.11.0.0.nupkg.sha512",
     "/root/.nuget/packages/hotchocolate.abstractions/11.0.0/hotchocolate.abstractions.11.0.0.nupkg.sha512",
     "/root/.nuget/packages/hotchocolate.aspnetcore/11.0.0/hotchocolate.aspnetcore.11.0.0.nupkg.sha512",
+    "/root/.nuget/packages/hotchocolate.data/11.0.0/hotchocolate.data.11.0.0.nupkg.sha512",
     "/root/.nuget/packages/hotchocolate.execution/11.0.0/hotchocolate.execution.11.0.0.nupkg.sha512",
     "/root/.nuget/packages/hotchocolate.fetching/11.0.0/hotchocolate.fetching.11.0.0.nupkg.sha512",
     "/root/.nuget/packages/hotchocolate.language/11.0.0/hotchocolate.language.11.0.0.nupkg.sha512",

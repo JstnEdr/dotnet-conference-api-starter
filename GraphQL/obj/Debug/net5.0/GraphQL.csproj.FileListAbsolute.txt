@@ -69,3 +69,4 @@
 /root/PROJECTS/PLAYGROUND/graphql-workshop/GraphQL/bin/Debug/net5.0/Microsoft.Bcl.AsyncInterfaces.dll
 /root/PROJECTS/PLAYGROUND/graphql-workshop/GraphQL/bin/Debug/net5.0/Microsoft.Extensions.DiagnosticAdapter.dll
 /root/PROJECTS/PLAYGROUND/graphql-workshop/GraphQL/bin/Debug/net5.0/Newtonsoft.Json.dll
+/root/PROJECTS/PLAYGROUND/graphql-workshop/GraphQL/bin/Debug/net5.0/HotChocolate.Data.dll

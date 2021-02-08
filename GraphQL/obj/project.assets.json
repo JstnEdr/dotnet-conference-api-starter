@@ -62,6 +62,19 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "HotChocolate.Data/11.0.0": {
+        "type": "package",
+        "dependencies": {
+          "HotChocolate.Execution": "11.0.0",
+          "HotChocolate.Types.CursorPagination": "11.0.0"
+        },
+        "compile": {
+          "lib/net5.0/HotChocolate.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/HotChocolate.Data.dll": {}
+        }
+      },
       "HotChocolate.Execution/11.0.0": {
         "type": "package",
         "dependencies": {
@@ -804,6 +817,20 @@
         "hotchocolate.aspnetcore.nuspec",
         "lib/net5.0/HotChocolate.AspNetCore.dll",
         "lib/netcoreapp3.1/HotChocolate.AspNetCore.dll"
+      ]
+    },
+    "HotChocolate.Data/11.0.0": {
+      "sha512": "qk/CT0C4G+hMGcGWhgRhAUM9faCGtFDrx0Dd7ddfhp1GJuvKnC1irE/vxZIVciKkFdbyBWhfzJLHfkW96lqrdw==",
+      "type": "package",
+      "path": "hotchocolate.data/11.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotchocolate.data.11.0.0.nupkg.sha512",
+        "hotchocolate.data.nuspec",
+        "lib/net5.0/HotChocolate.Data.dll",
+        "lib/netcoreapp3.1/HotChocolate.Data.dll",
+        "lib/netstandard2.0/HotChocolate.Data.dll"
       ]
     },
     "HotChocolate.Execution/11.0.0": {
@@ -1936,6 +1963,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "HotChocolate.AspNetCore >= 11.0.0",
+      "HotChocolate.Data >= 11.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.0"
     ]
@@ -1978,6 +2006,10 @@
         "targetAlias": "net5.0",
         "dependencies": {
           "HotChocolate.AspNetCore": {
+            "target": "Package",
+            "version": "[11.0.0, )"
+          },
+          "HotChocolate.Data": {
             "target": "Package",
             "version": "[11.0.0, )"
           },
