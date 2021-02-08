@@ -25,6 +25,10 @@ namespace ConferencePlanner.GraphQL.Types
           .Field(t => t.Sessions)
           .ResolveWith<TrackResolvers>(t => t.GetSessionsAsync(default!, default!, default!, default))
           .Name("sessions");
+
+      descriptor
+          .Field(t => t.Name)
+          .UseUpperCase();
     }
 
     private class TrackResolvers
