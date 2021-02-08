@@ -70,3 +70,10 @@
 /root/PROJECTS/PLAYGROUND/graphql-workshop/GraphQL/bin/Debug/net5.0/Microsoft.Extensions.DiagnosticAdapter.dll
 /root/PROJECTS/PLAYGROUND/graphql-workshop/GraphQL/bin/Debug/net5.0/Newtonsoft.Json.dll
 /root/PROJECTS/PLAYGROUND/graphql-workshop/GraphQL/bin/Debug/net5.0/HotChocolate.Data.dll
+/root/PROJECTS/PLAYGROUND/graphql-workshop/GraphQL/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/root/PROJECTS/PLAYGROUND/graphql-workshop/GraphQL/bin/Debug/net5.0/Snapshooter.dll
+/root/PROJECTS/PLAYGROUND/graphql-workshop/GraphQL/bin/Debug/net5.0/Snapshooter.Xunit.dll
+/root/PROJECTS/PLAYGROUND/graphql-workshop/GraphQL/bin/Debug/net5.0/xunit.abstractions.dll
+/root/PROJECTS/PLAYGROUND/graphql-workshop/GraphQL/bin/Debug/net5.0/xunit.assert.dll
+/root/PROJECTS/PLAYGROUND/graphql-workshop/GraphQL/bin/Debug/net5.0/xunit.core.dll
+/root/PROJECTS/PLAYGROUND/graphql-workshop/GraphQL/bin/Debug/net5.0/xunit.execution.dotnet.dll
